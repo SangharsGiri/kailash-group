@@ -1,0 +1,475 @@
+.tab-content.package {
+     padding-top: 36px;
+ }
+input.package_price {
+    width: 59px;
+}
+
+.tab-content { margin-top: 24px; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #00898c;
+}
+.btn_package{
+    background-color:#202020;
+    border-color: #202020;
+}
+.btn_package:hover{
+    background-color:#00898c;
+    border-color: #00898c;
+}
+div#checkboxes {
+    z-index: 999;
+    position: absolute;
+    background: #fff;
+}
+form{
+    width: 100%;
+}
+form.fst-ser-ch {
+    padding-left: 928px;
+}
+lable {
+    margin-right: 513px;
+}
+.nav > li > a {
+
+    color: #000;
+    font-weight: bold;
+}
+.add-gallery-button {
+    float: right;
+    margin-top: -5px;
+}
+
+.body-holder {
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.52);
+    border: 5px solid #f3f3f3;
+}
+
+.body-holder img {
+    width: 100%;
+}
+
+.album-options {
+
+    border: 4px solid #f3f3f3;
+    border-top: none;
+}
+
+.edit-options {
+    background: #D87954 none repeat scroll 0px 0px;
+    color: #FFF;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a .edit-options {
+    text-decoration: none;
+}
+
+.delete-options {
+    background: rgb(212, 75, 75) none repeat scroll 0% 0%;
+    display: inline-block;
+    margin: 0px;
+    color: #FFF;
+    padding: 10px 12px;
+}
+
+.delete-options:hover {
+    color: #fff;
+    background: rgb(177, 65, 65) none repeat scroll 0% 0%;
+}
+
+.edit-options:hover {
+    color: #fff;
+    background: #a25c3f none repeat scroll 0px 0px;
+}
+
+.album-options a {
+    float: right;
+}
+
+.album-options {
+    margin-bottom: 25px;
+}
+
+.album-name {
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.radio.one {
+    float: left;
+    margin-right: 15px;
+    margin-top: 0;
+}
+
+.album-pic-trash {
+    color: #ff0000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.modal-hr {
+    margin: 10px;
+}
+.modText{
+    display: block;
+    margin-bottom: 20px;
+}
+p.modal_note {
+    font-size: 13px;
+    line-height: 18px;
+}
+.modal_note > label {
+    margin-bottom: 0 !important;
+}
+
+
+.book_con p label span {
+    float: left;
+    padding: 0 0 5px;
+    width: 100%;
+}
+.book_con p input, .book_con p select, .book_con p textarea {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    color: #666666 !important;
+    font-size: 12px;
+    padding: 8px 5px;
+}
+
+.book_con label {
+    min-width: 22%;
+}
+
+.accomodation_wrapper {
+    display: block;
+    overflow: hidden;
+}
+.accomodation_label {
+    display: block;
+    float: left;
+}
+.accomodation_wrapper .input-accomodation {
+    margin: 0 0 11px;
+}
+.tab_form th {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+.tab_form input, .tab_form small, .tab_form textarea {
+    /*margin: 10px 0 0 25px;*/
+    /*padding: 5px 10px;*/
+}
+.payment_setting .form-table input {
+    margin: 12px 30px 20px 0;
+}
+
+.sub_panel_menu {
+    text-align: center;
+}
+.icon-box.bg-color-brown.set-icon {
+    display: block;
+    background: none;
+    font-size: 40px;
+    height: 70px;
+    line-height: 75px;
+    margin: 15px auto 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+}
+.sub_panel_menu .main-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bg_11{
+    background: #5D3AB8;
+}
+.bg_12{
+    background: #007bb6;
+}
+.bg_13{
+    background: #2D8AEF;
+}
+.bg_14{
+    background: #FFD54F;
+}
+.bg_15{
+    background: #6BA535;
+}
+.bg_16{
+    background: #4AD4FE;
+}
+.bg_17{
+    background: #1337FF;
+}
+.bg_18{
+    background: #008FB2;
+}
+.bg_19{
+    background: #B32648;
+}
+.bg_20{
+    background: #0D59C7;
+}
+.bg_21{
+    background: #9101B0;
+}
+.bg_22{
+    background: #EA7A16;
+}
+.bg_23{
+    background: #039F18;
+}
+.bg_24{
+    background: #4417A9;
+}
+.bg_25{
+    background: #983843;
+}
+
+div#cke_contact-detail {
+    /*margin: 10px 0 10px 25px !important;*/
+}
+div#cke_tab-body {
+    margin: 14px 0 0 24px;
+}
+div#cke_content_body {
+    /*margin: 22px 0 33px 24px;*/
+}
+div#cke_tab-body2 {
+    margin: 14px 0 0 24px;
+}
+div#cke_tab-body3 {
+    margin: 14px 0 0 24px;
+}
+div#cke_tab-body4 {
+    margin: 14px 0 0 24px;
+}
+div#cke_tab-body5 {
+    margin: 14px 0 0 24px;
+}
+
+select.page_type {
+    padding: 8px 0 7px 0;
+    margin: 14px 0 0 24px;
+}
+
+select.parent {
+    padding: 8px 0 7px 0;
+    margin: 14px 0 0 24px;
+}
+
+select.content_category {
+    padding: 8px 0 7px 0;
+    margin: 14px 0 0 24px;
+}
+
+.asterisk {
+    color: #c90000;
+
+}
+
+label.checkbox-inline {
+    padding: 13px 0 0 46px !important;
+}
+
+.mail_type{
+    margin-top: 4px !important;
+}
+
+
+/** sortable css **/
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#sortable li {
+    margin: 0 3px 3px 3px;
+    padding: 6px 10px;  border: 1px solid #d2d2d2 ;
+    font-size: 14px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,ffffff+52,eaeaea+100 */
+    background: #e5e5e5 ; /* Old browsers */
+    background: -moz-linear-gradient(top, #e5e5e5  0%, #ffffff  52%, #eaeaea  100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e5e5e5  0%, #ffffff 52%, #eaeaea  100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e5e5e5  0%, #ffffff  52%, #eaeaea  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5 ', endColorstr='#eaeaea ', GradientType=0); /* IE6-9 */
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+.sub-dropdown {
+    list-style: outside none none;
+}
+i.fa.fa-caret-down.collapsed {
+    cursor: pointer;
+}
+.pages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.pages li {
+    margin: 0 3px 3px 3px;
+    padding: 6px 10px;  border: 1px solid #d2d2d2 ;
+    font-size: 14px;
+
+}
+
+.pages li span {
+
+}
+
+.parent_category{
+    width: 409px;
+    height: 34px;
+    padding: 0 0 0 4px;
+    margin: 10px 0 0 24px;
+}
+
+.pcategory_code{
+    width: 408px;
+    height: 34px;
+    padding: 0 0 0 4px;
+    margin: 10px 0 0 24px;
+}
+
+.related_pkg li {
+    display: inline-block;
+}
+ul.related_pkg {
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+}
+
+
+/** tag css **/
+.tagNameHolder {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 6px;
+    padding-right: 24px;
+    background: #DBDBDB;
+    position: relative;
+    white-space: nowrap;
+    margin: 4px 6px 0 0;
+    float: left;
+}
+.remcat, .remtag, .addtag {
+    background: url(../img/remCat.png) no-repeat top right;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+}
+
+.add-tag {
+    cursor: pointer;
+}
+.addtag {
+    background: url(../img/addCat.png) no-repeat top right;
+}
+
+.gal-image img{
+    width: 332px;
+    height: 117px;
+}
+.itinearary_rmv {
+    background: url(../img/remCat.png) no-repeat top right;
+    position: absolute;
+    top: -25px;
+    right: 6px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+}
+.remove_option1.banner_img {
+    padding: 21px 0 0 27px;
+}
+
+.remove_option.featured_img {
+    padding: 21px 0 0 27px;
+}
+
+label.forex-form-label {
+    padding-left: 90px;
+}
+
+input.regular-text.required.valid.forex-checkbox {
+    margin: 0 0 0 73px;
+}
+
+button#add-forex-fields {
+    margin: 26px 0 0 25px;
+}
+label.forex-form-home {
+    padding: 0 0 0 75px;
+}
+.add_menu_btn {
+    margin: 36px 6px 35px 1px;
+}
+
+.controls select{
+    width: 300px;
+    height: 28px;
+}
+
+.tab_form th {
+    width: 156px;
+}
+
+.remove_option {
+    padding: 12px 0 27px 0;
+}
+
+.hotel_list_img{
+    max-width: 174px;
+    max-height: 58px;
+}
+
+.btn-related{
+    color: #fff;
+    background-color: #008b8b ;
+    border-color: #008b8b ;
+}
+
+.btn-room{
+    color: #fff;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+.select-height{
+    height: 33px;
+    width: 401px;
+}
+
+.row.show_mobile {
+    padding: 12px 0 11px 0;
+}

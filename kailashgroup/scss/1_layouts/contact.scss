@@ -1,0 +1,187 @@
+// for hotel page
+.hotel-section {
+    background: #f1f0f014;
+    h6 {
+        padding: 10px 0;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+    .form-group {
+        select {
+            padding: 5px 8px;
+            border-radius: 3px;
+        }
+    }
+    .btn-primary {
+        width: 100%;
+        background: #841212;
+        border: 1px solid #841212;
+        &:active {
+            background: none !important;
+            border: 1px solid #841212;
+        }
+    }
+    .room-num {
+        select {
+            padding: 5px 8px;
+            width: 100%;
+            border-radius: 3px;  
+        } 
+        .adult-3 {
+            background: url(../../image/icon/user.png)
+            // &::before {
+            //     font-family: "Font Awesome 5 Free";
+            //     font-weight: 900;
+            //     content: "\f500";
+            // }
+        }
+    }
+    i {
+        background: none;
+        background: none;
+        font-size: 25px;
+        color: #841212;
+        float: right;
+    }
+    .hotel-des {
+        padding: 30px 0;
+        .block {
+            height: 400px;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+                height: 380px;
+                object-fit: cover;
+                margin-top: 12px;
+            }
+            h3 {
+                color: #232323;
+                font-weight: bold;
+                font-family: Roboto,sans-serif;
+                font-size: 30px;
+                position: relative;
+                &:after {
+                    content: "";
+                    background: #1181b3;
+                    position: absolute;
+                    width: 60px;
+                    height: 3px;
+                    left: 0;
+                    top: 45px;
+                }
+            }
+            p {
+                font-size: 17px;
+                letter-spacing: 0.5px;
+                margin-top: 5px;
+                font-family: Roboto,sans-serif;
+                line-height: 32px;
+                color: #000;
+            }
+            a {
+                padding: 10px 25px;
+                background: #00adf1;
+                color: #fff;
+            }
+        }
+    }
+}
+// end of hotel page
+
+// for contact page
+.contact-section {
+    .image {
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+        .overlay {
+            position: absolute;
+            background: #3e3b3b6e;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0px;
+            right: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            h1 {
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                position: absolute;
+                bottom: 52px;
+            }
+        }
+    }
+    .foot-spcae{
+        padding: 30px 0;
+        
+        h3 {
+            font-weight: 700;
+            font-size: 2em;
+            padding-bottom: 7px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+          }
+          .form-group {
+              .form-control {
+                  box-shadow: none !important;
+                  border: 1px solid #ccc;
+              }
+          }
+          .btn-sub {
+              float: right;
+            input[type="submit"] {
+                background: #840909e6;
+                color: #fff;
+                padding: 5px 20px;
+                border: none;
+                font-size: 18px;
+            }
+          }
+        .contact-inf {
+            border: 1px solid #ccc;
+            width: 100%;
+            background: #f2f2f238;
+            box-shadow: 0 2px 2px #ddd;
+            //padding: 15px;
+            h1 {
+            font-size: 20px;
+            background: #840909e6;
+            padding: 13px;
+            color: #fff;
+            margin-bottom: 10px;
+            }
+            ul {
+                h6 {
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                li {
+                    display: block;
+                    color: #000;
+                    font-size: 17px;
+                    text-decoration: none;
+                    padding-bottom: 15px;
+                    font-weight: 300;
+                    i {
+                    font-size: 15px;
+                    padding-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+// end of contact page
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+    }
