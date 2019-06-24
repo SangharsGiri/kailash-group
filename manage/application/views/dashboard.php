@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <h2>Kailash Group Dashboard</h2>
+        <h2>Rupakot Holidays Dashboard</h2>
         <h5>Welcome <?php echo $this->session->userdata('username');?> , Love to see you back. </h5>
     </div>
 </div>
@@ -23,48 +23,7 @@
     </a>
 </div>
 
-<div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('trekking');?>">
-        <div class="panel panel-back sub_panel_menu bg_11">
-                <span class="icon-box bg-color-brown set-icon">
-                   <img src="themes/img/icons/trekking.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Trekking</p>
-
-            </div>
-        </div>
-    </a>
-</div>
-
-   <div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('tour');?>">
-        <div class="panel panel-back sub_panel_menu bg_11">
-                <span class="icon-box bg-color-brown set-icon">
-                   <img src="themes/img/icons/trekking.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Tour</p>
-
-            </div>
-        </div>
-    </a>
-</div>
-
-
-    <div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('flight');?>">
-        <div class="panel panel-back sub_panel_menu bg_11">
-                <span class="icon-box bg-color-brown set-icon">
-                   <img src="themes/img/icons/trekking.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Flight</p>
-
-            </div>
-        </div>
-    </a>
-</div>
+    
 
 
 
@@ -104,34 +63,6 @@
                 </span>
             <div class="text-box">
                 <p class="main-text">Content Setting</p>
-
-            </div>
-        </div>
-    </a>
-</div>
-
-<div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('logo');?>">
-        <div class="panel panel-back sub_panel_menu bg_24">
-                <span class="icon-box bg-color-brown set-icon">
-                      <img src="themes/img/icons/gallery.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Logo</p>
-
-            </div>
-        </div>
-    </a>
-</div>
-
-<div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('package_review');?>">
-        <div class="panel panel-back sub_panel_menu bg_24">
-                <span class="icon-box bg-color-brown set-icon">
-                      <img src="themes/img/icons/testimonials.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Testimonials</p>
 
             </div>
         </div>
@@ -198,19 +129,7 @@
     </div>
 
 
-    <div class="col-md-2 col-sm-6 col-xs-6 ">
-    <a href="<?php echo site_url('Global_partner');?>">
-        <div class="panel panel-back sub_panel_menu bg_24">
-                <span class="icon-box bg-color-brown set-icon">
-                      <img src="themes/img/icons/testimonials.png">
-                </span>
-            <div class="text-box">
-                <p class="main-text">Global Partner</p>
 
-            </div>
-        </div>
-    </a>
-</div>
 
 
     <div class="col-md-2 col-sm-6 col-xs-6 ">
@@ -370,8 +289,24 @@
                 <span class="icon-box bg-color-brown set-icon">
                      <img src="themes/img/icons/banner.png">
                 </span>
-             <div class="text-box">
+            <div class="text-box">
                 <p class="main-text">Subscribers</p>
+
+            </div>
+        </div>
+    </a>
+</div>
+
+
+
+<div class="col-md-2 col-sm-6 col-xs-6 ">
+    <a href="<?php echo site_url('package_review');?>">
+        <div class="panel panel-back sub_panel_menu bg_24">
+                <span class="icon-box bg-color-brown set-icon">
+                      <img src="themes/img/icons/testimonials.png">
+                </span>
+            <div class="text-box">
+                <p class="main-text">Testimonials</p>
 
             </div>
         </div>

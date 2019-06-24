@@ -10,6 +10,8 @@
     <!-- BOOTSTRAP STYLES-->
     <link href="themes/css/bootstrap.css" rel="stylesheet" />
 
+    <link href="themes/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Font Awesome Icons -->
     <link href="themes/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
@@ -17,17 +19,21 @@
     <link href="themes/css/custom.css" rel="stylesheet" />
     <!-- STYLES-->
     <link href="themes/css/style.css" rel="stylesheet" />
-    <link href="themes/css/select2.css" rel="stylesheet" />
-    <link href="themes/css/select2.min.css" rel="stylesheet" />
 
     <link href="themes/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="themes/css/reset.min.css" />
+
+
+
+
         
 
 
     <script src="themes/js/jquery.min.js"></script>
     <script src="themes/js/jquery-ui.min.js"></script>
     <script src="themes/js/bootstrap.min.js"></script>
+     <link href="select2/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="select2/dist/js/select2.full.min.js"></script>
     <!-- JQUERY -->
 
 

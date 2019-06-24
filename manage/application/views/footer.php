@@ -19,14 +19,8 @@
 
 <!-- DATA TABLE SCRIPTS -->
 <script src="themes/js/dataTables/jquery.dataTables.js"></script>
-<script src="themes/js/select2.full.js"></script>
-<script src="themes/js/select2.full.min.js"></script>
 <script src="themes/js/dataTables/dataTables.bootstrap.js"></script>
-<script>
-    $(document).ready(function() {
-    $('.pcategory_code').select2();
-    });
-</script>
+
 
 <script>
     $(document).ready(function () {

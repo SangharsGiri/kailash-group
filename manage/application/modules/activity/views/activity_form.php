@@ -50,11 +50,6 @@
                 </label></th>
             <td style="background: transparent none repeat scroll 0% 0%;"><input type="text" name="activity_name" id="activity_name" size="50" value="<?php echo (isset($detail['activity_name']) && $detail['activity_name'] !="") ? $detail['activity_name']:""; ?>" data-validation="required" autocomplete="off" class="regular-text required valid" kl_virtual_keyboard_secure_input="on"></td>
         </tr>
-        <tr valign="top">
-            <th style="background: transparent none repeat scroll 0% 0%;" scope="row"><label for="admin_name">Duration<span class="asterisk">*</span>
-                </label></th>
-            <td style="background: transparent none repeat scroll 0% 0%;"><input type="text" name="duration" id="duration" size="50" value="<?php echo (isset($detail['duration']) && $detail['duration'] !="") ? $detail['duration']:""; ?>" data-validation="required" autocomplete="off" class="regular-text required valid" kl_virtual_keyboard_secure_input="on"></td>
-        </tr>
 
         <?php
         $path  =  '../uploads/activity/';
@@ -137,6 +132,7 @@
 
             </td>
         </tr>
+
         <tr valign="top" class="contact_detail">
             <th style="background: transparent none repeat scroll 0% 0%;" scope="row">
                 <label>Description</label></th>

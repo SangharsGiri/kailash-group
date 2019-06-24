@@ -32,8 +32,8 @@
                         <h1>plan your travel now!</h1>
                         <p>experience the various exciting tour and travel packages, find vacation packages</p>
                         <nav class="navbar navbar-light bg-light">
-                            <form action="<?php echo site_url('index.php/all_news/search') ?>" method="post" class="form-inline">
-                                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                             </form>
                         </nav>
@@ -44,24 +44,24 @@
                                             <div class="col-md-3">
                                                 <div class="box-block">
                                                     <div class="box">
-                                                        <a href="<?php echo site_url("index.php/models");?>"><i class="fas fa-umbrella-beach"></i></a>
-                                                       <a href="<?php echo site_url("index.php/models");?>"><h1>tour</h1></a>
+                                                        <i class="fas fa-umbrella-beach"></i>
+                                                        <h1>tour</h1>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                     <div class="box-block">
-                                                       <div class="box">
-                                                             <a href="<?php echo site_url("index.php/models/trekking");?>"><i class="fas fa-bed"></i></a>
-                                                       <a href="<?php echo site_url("index.php/models/trekking");?>"><h1>trekking</h1></a>
+                                                        <div class="box">
+                                                            <i class="fas fa-bed"></i>   
+                                                        <h1>trekking</h1>
                                                         </div>
                                                     </div>
                                             </div>
                                              <div class="col-md-3">
                                                 <div class="box-block">
                                                     <div class="box">
-                                                        <a href="<?php echo site_url("index.php/models/activities");?>"><i class="fas fa-hiking"></i></a>
-                                                       <a href="<?php echo site_url("index.php/models/activities");?>"><h1>activites</h1></a>
+                                                    <i class="fas fa-hiking"></i> 
+                                                    <h1>activites</h1>
                                                     </div>
                                                 </div>
                                    
@@ -69,8 +69,8 @@
                                             <div class="col-md-3">
                                                     <div class="box-block">
                                                         <div class="box">
-                                                        <a href="<?php echo site_url("index.php/models/flight");?>"><i class="fas fa-fighter-jet"></i></a>
-                                                       <a href="<?php echo site_url("index.php/models/flight");?>"><h1>flight</h1></a>
+                                                        <i class="fas fa-fighter-jet"></i> 
+                                                        <h1>flight</h1>
                                                         </div>
                                                     </div>
                                             </div>   
@@ -89,7 +89,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
-          
+           
         </div>
     </div>
     <div class="section-vacation">
@@ -98,12 +98,11 @@
                         <h1>vacation - <span class="vacspan">featured deals</span><a href="#">show all </a></h1>
                         
                     <section class="regular slider">
-                       <?php
-                       $folder_path  = 'uploads/package/';
+                        <?php
                         foreach ($get_featured_package as $row) { 
                         ?> 
                         <div>
-                            <img src="<?php echo site_url($folder_path.$row['package_id'].'/'.$row['featuredimg']); ?>">
+                            <img src="<?php echo site_url('uploads/package/'.$row['package_id'].'/'.$row['featuredimg']); ?>">
                             <div class="caption">
                                 <h2 class="captionh"><?php echo $row['package_name']; ?></h2>
                                 <span>
@@ -114,7 +113,6 @@
                                     ?>
                                     <?php if (!empty($discount_price)) { ?>
                                          $<?php echo $new_price; ?>
-
                                     <?php 
                                        }
                                      else{?>
@@ -127,7 +125,49 @@
                                 </span>
                             </div>
                         </div>
-                        <?php  } ?> 
+                        <?php  } ?>    
+                        <!-- <div>
+                            <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg">
+                            <div class="caption">
+                                <h2 class="captionh">memorable honeymoon in goa</h2>
+                                <span>$34,499 (4 day/ 3 night)</span>
+                            </div>
+                        </div>
+                        <div>
+                             <img src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg">
+                             <div class="caption">
+                                <h2>delightful goa vacation</h2>
+                                <span>$34,499 (5 day/ 6 night)</span>
+                            </div>
+                        </div>
+                        <div>
+                             <img src="image/langtang-heli-charter-tour33.jpg">
+                             <div class="caption">
+                                <h2>romance and adventure in punjab</h2>
+                                <span>$34,499 (5 day/ 6 night)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="image/everest-base-camp-helicopter-tour-1-1920x600.jpg">
+                            <div class="caption">
+                                <h2>romance and adventure in punjab</h2>
+                                <span>$34,499 (5 day/ 6 night)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg">
+                            <div class="caption">
+                                <h2>romance and adventure in punjab</h2>
+                                <span>$34,499 (5 day/ 6 night)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg">
+                            <div class="caption">
+                                <h2>romance and adventure in punjab</h2>
+                                <span>$34,499 (5 day/ 6 night)</span>
+                            </div>
+                        </div> -->
                     </section>
                 </div>
             <!-- </div> -->
@@ -139,48 +179,108 @@
                         <h1>upcoming adventure trips </h1>
                         <h2>check out these amazing adventure trips</h2>
                     </div>
+                        
                     <section class="regular-trip slider-trip">
-                        <?php
-                       $folder_path  = 'uploads/package/';
-                        foreach ($get_adventure_trips as $row) { 
-                        ?> 
                         <div>
-                            <div class="card" >
-                                <img class="card-img-top" src="<?php echo site_url($folder_path.$row['package_id'].'/'.$row['featuredimg']); ?>">
-                                <div class="card-body">
-                                  <a href="<?php echo base_url('index.php/news/detail/'.$row['package_id']) ?>"><h5 class="card-title"><?php echo $row['package_name']; ?></h5></a>
-                                  <p class="card-text"><?php echo $row['package_duration'];?></p>
-
-
-                                  <?php 
-                                  $price =  $row['price'];
-                                  $discount_price = $row['discount_price'];
-                                  $new_price = $price-$discount_price;
-                                  if (empty($discount_price)) { ?>
-
-                                         <h2>$<?php echo $price; ?> <span>per persson</span></h2>
-                                    <?php 
-                                       }
-                                     else{?>
-
-                                        <span class="span1"><strike>$<?php echo $price; ?></strike> <span ><?php echo $discount_price; ?>off</span></span>
-                                  
-                                  <h2>$<?php echo $new_price; ?><span>per persson</span></h2>
-                                     <?php 
-                                       }
-                                    ?>
-                                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                        <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
-                                             <button type="button" class="btn Second btn-secondary">submit query</button>
+                                <div class="card" >
+                                        <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">the dream ride motor bike expeditio</h5>
+                                          <p class="card-text">duration: 13 Day</p>
+                                        <span class="span1"><strike>$ 16000</strike> <span >$1000 off</span></span>
+                                          
+                                          <h2>$26000 <span>per persson</span></h2>
+                                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
+                                                     <button type="button" class="btn Second btn-secondary">submit query</button>
+                                                </div>
+                                                <div class="btn-group third-group " role="group" aria-label="Third group">
+                                                  <button type="button" class="btn third btn-secondary">book now</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="btn-group third-group " role="group" aria-label="Third group">
-                                          <button type="button" class="btn third btn-secondary">book now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                      </div>
                         </div>
-                        <?php  } ?>
+                        <div>
+                                <div class="card" >
+                                        <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">the dream ride motor bike expeditio</h5>
+                                          <p class="card-text">duration: 13 Day</p>
+                                        <span class="span1"><strike>$ 16000</strike> <span >$1000 off</span></span>
+                                          
+                                          <h2>$26000 <span>per persson</span></h2>
+                                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
+                                                     <button type="button" class="btn Second btn-secondary">submit query</button>
+                                                </div>
+                                                <div class="btn-group third-group " role="group" aria-label="Third group">
+                                                  <button type="button" class="btn third btn-secondary">book now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                        <div>
+                                <div class="card" >
+                                        <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">the dream ride motor bike expeditio</h5>
+                                          <p class="card-text">duration: 13 Day</p>
+                                        <span class="span1"><strike>$ 16000</strike> <span >$1000 off</span></span>
+                                          
+                                          <h2>$26000 <span>per persson</span></h2>
+                                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
+                                                     <button type="button" class="btn Second btn-secondary">submit query</button>
+                                                </div>
+                                                <div class="btn-group third-group " role="group" aria-label="Third group">
+                                                  <button type="button" class="btn third btn-secondary">book now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                        <div>
+                                <div class="card" >
+                                        <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">the dream ride motor bike expeditio</h5>
+                                          <p class="card-text">duration: 13 Day</p>
+                                        <span class="span1"><strike>$ 16000</strike> <span >$1000 off</span></span>
+                                          
+                                          <h2>$26000 <span>per persson</span></h2>
+                                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
+                                                     <button type="button" class="btn Second btn-secondary">submit query</button>
+                                                </div>
+                                                <div class="btn-group third-group " role="group" aria-label="Third group">
+                                                  <button type="button" class="btn third btn-secondary">book now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                        <div>
+                                <div class="card" >
+                                        <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">the dream ride motor bike expeditio</h5>
+                                          <p class="card-text">duration: 13 Day</p>
+                                        <span class="span1"><strike>$ 16000</strike> <span >$1000 off</span></span>
+                                          
+                                          <h2>$26000 <span>per persson</span></h2>
+                                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group mr-2 second-group" role="group" aria-label="Second group">
+                                                     <button type="button" class="btn Second btn-secondary">submit query</button>
+                                                </div>
+                                                <div class="btn-group third-group " role="group" aria-label="Third group">
+                                                  <button type="button" class="btn third btn-secondary">book now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
                         
                     </section>
                 </div>
@@ -209,7 +309,7 @@
                           }
                         ?>
                         
-                        <a target="_blank" href="<?php echo $path.$adventure['featured_img']; ?>">
+                        <a href="#">
                             <div class="zoom-icon">
                                <i class="fas fa-search-plus"></i>
                             </div>
@@ -223,7 +323,136 @@
                     </div>
                </div>
             <?php } ?>
+               <!--<div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                               <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                              <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+               </div>
+               <div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                            <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                                  <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                                <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                                <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3" style="">
+                    <div class="image-logo">
+                        <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                        <a href="#">
+                            <div class="zoom-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="overlay">
+                            <div class="text">
+                                <h1>Hello World</h1>
+                            </div>
+                            <a href="#"><button  class="btn btn-danger">view details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3" style="">
+                        <div class="image-logo">
+                            <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                            <a href="#">
+                                <div class="zoom-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                            <div class="overlay">
+                                <div class="text">
+                                    <h1>Hello World</h1>
+                                </div>
+                              <a href="#"><button  class="btn btn-danger">view details</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-3" style="">
+                        <div class="image-logo">
+                            <img src="image/886abb96d96ae45c32d44ecce1c5f468paragliding-in-nepal.jpg" alt="Avatar" class="image">
+                            <a href="#">
+                                <div class="zoom-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                            <div class="overlay">
+                                <div class="text">
+                                    <h1>Hello World</h1>
+                                </div>
+                                <a href="#"><button  class="btn btn-danger">view details</button></a>
+                            </div>
+                        </div>
+                    </div>-->
            </div>
+       <!-- </div> -->
     </div>
     <div class="highlight-section">
         <h1>latest hightlights</h1>
@@ -231,47 +460,137 @@
 
         <div class="container" style="padding: 0;">
             <div class="row">
-                <?php
-                    $highlight_path  = 'uploads/activity/';
-                    $j=1;
-                    foreach($highlights as $rows)
-                        
-                    {
-                    $active =  (isset($j) && $j=="1") ? "active":"";
-                ?>
-                    <div class="col-md-4">
+                <div class="col-md-4">
                         <div class="card ">
                             <div class="img-card">
-                                <?php
-                                if (!empty($rows['featured_img'])){ ?>
-                                <img class="card-img-top" src="<?php echo $highlight_path.$rows['featured_img']; ?>" alt="Card image cap">
-                            <?php }
-
-                            else{ ?>
-                                       <img class="card-img-top" src="image/langtang-heli-charter-tour33.jpg" alt="Card image cap">
-                            <?php } ?>
-
+                                <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
                                 <div class="overlay"></div>
                             </div>
                                 <div class="card-body">
-                                  <h5 class="card-title ml-2"><?php echo $rows['content_title']; ?></h5>
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
                                   <div class="rate">
                                         <h1>rating:<span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
-                                        <span class="rateday "><?php echo $rows['duration']; ?></span>
+                                        <span class="rateday ">6 nights & 7 days</span>
                                         
                                     </h1>
                                   </div>
                                 </div>
                               </div>
                 </div> 
-                <?php
-                    $j++;
-                    }
-                ?> 
+                <div class="col-md-4">
+                        <div class="card " >
+                                <div class="img-card">
+                                    <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap"> -->
+                                <div class="card-body">
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
+                                  <div class="rate">
+                                        <h1>rating:<span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="rateday ml-5">6 nights & 7 days</span>
+                                        
+                                    </h1>
+                                  </div>
+                                </div>
+                              </div>
+                </div> 
+                <div class="col-md-4">
+                    <div class="card " >
+                            <div class="img-card">
+                                <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
+                                <div class="overlay"></div>
+                            </div>
+                            <!-- <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap"> -->
+                                <div class="card-body">
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
+                                  <div class="rate">
+                                        <h1>rating:<span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="rateday ml-5">6 nights & 7 days</span>
+                                        
+                                    </h1>
+                                  </div>
+                                </div>
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                    <div class="card ">
+                            <div class="img-card">
+                                <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
+                                <div class="overlay"></div>
+                            </div>
+                                <!-- <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap"> -->
+                                <div class="card-body">
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
+                                  <div class="rate">
+                                        <h1>rating:<span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="rateday ml-5">6 nights & 7 days</span>
+                                        
+                                    </h1>
+                                  </div>
+                                </div>
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                        <div class="card ">
+                                <div class="img-card">
+                                    <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap"> -->
+                                <div class="card-body">
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
+                                  <div class="rate">
+                                        <h1>rating:<span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="rateday ml-5">6 nights & 7 days</span>
+                                        
+                                    </h1>
+                                  </div>
+                                </div>
+                              </div>
+                </div> 
+                <div class="col-md-4">
+                        <div class="card ">
+                                <div class="img-card">
+                                    <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap">
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- <img class="card-img-top" src="image/gorekshep-and-everest-base-camp-kalapathher99.jpg" alt="Card image cap"> -->
+                                <div class="card-body">
+                                  <h5 class="card-title ml-2">adventurous nepal</h5>
+                                  <div class="rate">
+                                        <h1>rating:<span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="rateday ml-5">6 nights & 7 days</span>
+                                        
+                                    </h1>
+                                  </div>
+                                </div>
+                              </div>
+                </div>       
             </div>
         </div>
     </div>
@@ -282,14 +601,17 @@
                         <li>the destination of your dreams</li>
                         <li class="lijust" style="font-size: 52px;">is just a click away</li>
                         <li><img src="image/icon/flower-icon.png"> </li>
-                        <li class="liget" style="font-size: 24px;font-weight:700;">Address :  <?php echo $site_settings['contact_address']; ?></li>
-                        <li class="help">help line :  <?php echo $site_settings['contact_number']; ?></li>
+                        <li class="liget" style="font-size: 24px;">get best travel</li>
+                        <li class="help">help line: +9779807555929</li>
                     </ul>
             </div>
             <div class="col-md-6 block-two">
                 <h1><small>namaste from top of the world!</small> <br>about kailash group heli service</h1>   
                 <h2></h2> 
-                <p><?php echo $site_settings['slogan']; ?>
+                <p>“Combining an intoxicating mix of religious, heritage, culture, incredible 
+                    wildlife, exceptional sightseeing and unsurpassed adventurous scenery, 
+                    Highway to Himalayas is our definitive concept to explore the Naturally
+                     Nepal from every hook and corner of Himalayas.”
                 </p>
             </div>
         </div>
@@ -302,24 +624,27 @@
                     <h1>our global partners</h1>
             </div>
             <section class="regular-global slider-global">
-                    <?php
-                    $folder_path  = 'uploads/partners/';
-                    $j=1;
-                    foreach($partners as $rows)
-                    {
-                    $active =  (isset($j) && $j=="1") ? "active":"";
-                ?>
                     <div class="logo-img">
-                        <a target="_blank" href="<?php echo $rows['partner_url']; ?>"><img src="<?php echo $folder_path.$rows['featured_img']; ?>" alt="<?php echo $rows['title']; ?>" style="max-width:100%;"></a>
+                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
                     </div>
-                <?php
-                    $j++;
-                    }
-                ?>
+                    <div class="logo-img">
+                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
+                    </div>
+                    <div class="logo-img">
+                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
+                    </div>
+                    <div class="logo-img">
+                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
+                    </div>
+                    <div class="logo-img">
+                                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
+                    </div>
+                    <div class="logo-img">
+                                        <a href="#"><img src="image/pata.png" alt="Image" style="max-width:100%;"></a>
+                    </div>
                     
                 </section>
                 </div>
-                
         <!-- </div> -->
     </div>
    

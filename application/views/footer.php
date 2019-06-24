@@ -71,18 +71,11 @@
                     <div class="col-md-12 footer-part2">
                             <h1>afilation</h1>
                             <ul>
-                                                <?php
-                                    $folder_path  = base_url("uploads/partners/");
-                                    $j=1;
-                                    foreach($partners as $rows)
-                                    {
-                                    $active =  (isset($j) && $j=="1") ? "active":"";
-                                ?>
-                                    <li><a href="<?php echo $rows['partner_url']; ?>"><img src="<?php echo $folder_path.$rows['featured_img']; ?>" alt="<?php echo $rows['title']; ?>"></a></li>
-                                <?php
-                                    $j++;
-                                    }
-                                ?>
+                                <li><a href="#"><img src="image/natta.png" alt=""></a></li>
+                                <li><a href="#"><img src="image/nma.png" alt=""></a></li>
+                                <li><a href="#"><img src="image/ntb.png" alt=""></a></li>
+                                <li><a href="#"><img src="image/pata.png" alt=""></a></li>
+                                <li><a href="#"><img src="image/taan.png" alt=""></a></li>
                             </ul>
                         </div>
                 </div>
@@ -94,16 +87,15 @@
                         <div class="col-md-4 footer-part ">
                                 <!-- <h1>follow us</h1> -->
                             <ul>
-                                <li class=""><a target="_blank" href="<?php echo $site_settings['facebook_link']; ?>"><i class="fab fa-facebook-f facebook"></i></a></li>
-                                <li class=""><a target="_blank" href="<?php echo $site_settings['linked_in']; ?>"><i class="fab fa-linkedin-in linked"></i></a></li>
-                                <li class=""><a target="_blank" href="<?php echo $site_settings['twiter_link']; ?>"><i class="fab fa-twitter twitter"></i></a></li>
-                                <li class=""><a target="_blank" href="<?php echo $site_settings['instagram']; ?>"><i class="fab fa-instagram instagram"></i></a></li>
-                                <li class=""><a target="_blank" href="<?php echo $site_settings['youtube_link']; ?>"><i class="fab fa-youtube youtube"></i></a></li>
+                                <li class=""><a href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
+                                <li class=""><a href="#"><i class="fab fa-linkedin-in linked"></i></a></li>
+                                <li class=""><a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+                                <li class=""><a href="#"><i class="fab fa-instagram instagram"></i></a></li>
+                                <li class=""><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-md-4 ">
-                            <?php $path  = base_url("uploads/logo/"); ?>
-                            <h1> <a href="#"> <img src="<?php echo $path.$logo['logo_image'];?>"></a> kailash Group heli service</h1>
+                            <h1> <a href="#"> <img src="image/logoblue.png"> </a> kailash Group heli service</h1>
                             </div>
                         <div class="col-md-4 ">
                             <p>2019@ nectar digit</p>
@@ -216,21 +208,21 @@
                                     <h1>get in touch</h1>
                                     <div class="contact">
                                        <ul>
-                                          <li><i class="fas fa-phone-volume"></i><?php echo $site_settings['contact_number']; ?></li>
-                                          <li><i class="fas fa-map-marked-alt"></i><?php echo $site_settings['contact_address']; ?></li>
-                                          <li><i class="fas fa-envelope"></i><?php echo $site_settings['feedback_email']; ?></li>
+                                          <li><i class="fas fa-phone-volume"></i>+977-123456789</li>
+                                          <li><i class="fas fa-phone-volume"></i>+977-123456789</li>
+                                          <li><i class="fas fa-envelope"></i>demo@gmail.com</li>
                   
                                        </ul>
-                                   <div class="social-media">
-                                     <ul>
-                                        <li class=""><a target="_blank" href="<?php echo $site_settings['facebook_link']; ?>"><i class="fab fa-facebook-f facebook"></i></a></li>
-                                        <li class=""><a target="_blank" href="<?php echo $site_settings['linked_in']; ?>"><i class="fab fa-linkedin-in linked"></i></a></li>
-                                        <li class=""><a target="_blank" href="<?php echo $site_settings['twiter_link']; ?>"><i class="fab fa-twitter twitter"></i></a></li>
-                                        <li class=""><a target="_blank" href="<?php echo $site_settings['instagram']; ?>"><i class="fab fa-instagram instagram"></i></a></li>
-                                        <li class=""><a target="_blank" href="<?php echo $site_settings['youtube_link']; ?>"><i class="fab fa-youtube youtube"></i></a></li>
-                                    </ul>
-                                   </div>
-                                </div>
+                                       <div class="social-media">
+                                             <ul>
+                                                <li class=""><a href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
+                                                <li class=""><a href="#"><i class="fab fa-linkedin-in linked"></i></a></li>
+                                                <li class=""><a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+                                                <li class=""><a href="#"><i class="fab fa-instagram instagram"></i></a></li>
+                                                <li class=""><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+                                               </ul>
+                                       </div>
+                                    </div>
                             </div>
                        </div>
                    </div>
@@ -298,54 +290,4 @@
           });
           
     </script>
-     <!-- <script type="text/javascript">
-function rating() {
-    $('#rating_modal').modal('show');
-} </script>
-
-
-<script>
-function post_rating() {
-    var blogid = $('#blog_id').val();
-    var comment_rating = $('#comment_rating').val();
-    var starcount = $star_rating.siblings('input.rating-value').val();
-    if (starcount&&comment_rating) {
-    $.ajax({
-        url: "main/rating",
-        data: {starcount: starcount, blogid: blogid, comment_rating: comment_rating},
-        type: "POST",
-        success: function (data) {
-
-            location.reload();
-
-        },
-        error: function (jqXHR, textStatus, errorThrown)
-        {
-            alert('error in insert rating data');
-        }
-    });
-    }else{
-        alert("Please rate and comment");
-    }
-
-}
-var $star_rating = $('.star-rating .fa');
-var SetRatingStar = function() {
-    return $star_rating.each(function() {
-    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
-
-    return $(this).removeClass('fa-star-o').addClass('fa-star');
-    } else {
-        return $(this).removeClass('fa-star').addClass('fa-star-o');
-    }
-});
-
-};
-// alert($star_rating.siblings('input.rating-value').val());
-
-$star_rating.on('click', function() {
-    $star_rating.siblings('input.rating-value').val($(this).data('rating'));
-    return SetRatingStar();
-});
-</script> -->
 </html>

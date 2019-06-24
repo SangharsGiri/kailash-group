@@ -26,13 +26,14 @@ class Site_settings extends CI_Controller
     {
 
         $id= $this->input->post('id');
-        //$insert['site_name'] = $this->input->post('site_name');
+        $insert['site_name'] = $this->input->post('site_name');
+        $insert['site_slogan'] = $this->input->post('site_slogan');
        
-        //$insert['site_url'] = $this->input->post('site_url');
+        $insert['site_url'] = $this->input->post('site_url');
         $insert['contact_number'] = $this->input->post('contact_number');
         $insert['feedback_email'] = $this->input->post('feedback_email');
         $insert['skype'] = $this->input->post('skype');
-        //$insert['time_hour'] = $this->input->post('time_hour');
+        $insert['time_hour'] = $this->input->post('time_hour');
         $insert['contact_address'] = $this->input->post('contact_address');
         $insert['facebook_link'] = $this->input->post('facebook_link');
         $insert['twiter_link'] = $this->input->post('twiter_link');
@@ -40,42 +41,42 @@ class Site_settings extends CI_Controller
         $insert['google_plus_link'] = $this->input->post('google_plus_link');
         $insert['linked_in'] = $this->input->post('linked_in');
         $insert['instagram'] = $this->input->post('instagram');
-        //$insert['location_map'] = $this->input->post('location_map');
-        $insert['slogan'] = $this->input->post('slogan');
+        $insert['location_map'] = $this->input->post('location_map');
+        $insert['contact_details'] = $this->input->post('contact_details');
         $insert['meta_title'] = $this->input->post('meta_title');
         $insert['meta_description'] = $this->input->post('meta_description');
         $insert['meta_keywords'] = $this->input->post('meta_keywords');
-        //$insert['home_title'] = $this->input->post('home_title');
-        //$insert['home_description'] = $this->input->post('home_description');
+        $insert['home_title'] = $this->input->post('home_title');
+        $insert['home_description'] = $this->input->post('home_description');
 
-        //$insert['copyright'] = $this->input->post('copyright');
-       // $insert['powered_by'] = $this->input->post('powered_by');
+        $insert['copyright'] = $this->input->post('copyright');
+        $insert['powered_by'] = $this->input->post('powered_by');
 
-        // $insert['service_title_one'] = $this->input->post('service_title_one');
-        // $insert['service_description_one'] = $this->input->post('service_description_one');
-        // $insert['service_title_two'] = $this->input->post('service_title_two');
-        // $insert['service_description_two'] = $this->input->post('service_description_two');
-        // $insert['service_title_three'] = $this->input->post('service_title_three');
-        // $insert['service_description_three'] = $this->input->post('service_description_three');
-        // $insert['service_title_five'] = $this->input->post('service_title_five');
-        // $insert['service_description_five'] = $this->input->post('service_description_five');
+        $insert['service_title_one'] = $this->input->post('service_title_one');
+        $insert['service_description_one'] = $this->input->post('service_description_one');
+        $insert['service_title_two'] = $this->input->post('service_title_two');
+        $insert['service_description_two'] = $this->input->post('service_description_two');
+        $insert['service_title_three'] = $this->input->post('service_title_three');
+        $insert['service_description_three'] = $this->input->post('service_description_three');
+        $insert['service_title_five'] = $this->input->post('service_title_five');
+        $insert['service_description_five'] = $this->input->post('service_description_five');
 
-        // $insert['login_title'] = $this->input->post('login_title');
-        // $insert['login_message'] = $this->input->post('login_message');
-        // $insert['registration_title'] = $this->input->post('registration_title');
-        // $insert['registration_message'] = $this->input->post('registration_message');
+        $insert['login_title'] = $this->input->post('login_title');
+        $insert['login_message'] = $this->input->post('login_message');
+        $insert['registration_title'] = $this->input->post('registration_title');
+        $insert['registration_message'] = $this->input->post('registration_message');
 
-        // $insert['subscription_title'] = $this->input->post('subscription_title');
-        // $insert['subscription'] = $this->input->post('subscription');
+        $insert['subscription_title'] = $this->input->post('subscription_title');
+        $insert['subscription'] = $this->input->post('subscription');
         
-        // $insert['counter_one'] = $this->input->post('counter_one');
-        // $insert['counter_one_description'] = $this->input->post('counter_one_description');
-        // $insert['counter_two'] = $this->input->post('counter_two');
-        // $insert['counter_two_description'] = $this->input->post('counter_two_description');
-        // $insert['counter_three'] = $this->input->post('counter_three');
-        // $insert['counter_three_description'] = $this->input->post('counter_three_description');
-        // $insert['counter_four'] = $this->input->post('counter_four');
-        // $insert['counter_four_description'] = $this->input->post('counter_four_description');
+        $insert['counter_one'] = $this->input->post('counter_one');
+        $insert['counter_one_description'] = $this->input->post('counter_one_description');
+        $insert['counter_two'] = $this->input->post('counter_two');
+        $insert['counter_two_description'] = $this->input->post('counter_two_description');
+        $insert['counter_three'] = $this->input->post('counter_three');
+        $insert['counter_three_description'] = $this->input->post('counter_three_description');
+        $insert['counter_four'] = $this->input->post('counter_four');
+        $insert['counter_four_description'] = $this->input->post('counter_four_description');
 
         if($id !="")
         {

@@ -136,30 +136,31 @@
         </div>
          <div class="col-sm-6">
             <div class="form-group">
-                <label for="contact_address">Address<span class="asterisk">*</span> </label>
+                <label for="contact_address">Contact Address<span class="asterisk">*</span> </label>
                 <input type="text" name="contact_address"  value="<?php echo (isset($setting['contact_address']) && $setting['contact_address'] !="") ? $setting['contact_address']:""; ?>" required="required" autocomplete="off" class="form-control required" kl_virtual_keyboard_secure_input="on">
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <div class="form-group">
                 <label for="feedback_email">Feedback Email<span class="asterisk">*</span> </label>
                 <input type="text" name="feedback_email" id="feedback_email" value="<?php echo (isset($setting['feedback_email']) && $setting['feedback_email'] !="") ? $setting['feedback_email']:""; ?>" required="required"  autocomplete="off" class="form-control required" kl_virtual_keyboard_secure_input="on">
             </div>
         </div>
+    </div>
    <!--  <div class="row">
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="time_hour">Working Hours<span class="asterisk">*</span> </label>
                 <input type="text" name="time_hour" id="time_hour" value="<?php echo (isset($setting['time_hour']) && $setting['time_hour'] !="") ? $setting['time_hour']:""; ?>" required="required" autocomplete="off" class="form-control required" kl_virtual_keyboard_secure_input="on">
             </div>
-        </div> -->
+        </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <label>LinkedIN </label>
-                <input type="text" name="linked_in" id="skype_name" class="form-control" value="<?php echo (isset($setting['linked_in']) && $setting['linked_in'] !="") ? $setting['linked_in']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
+                <label>Skype </label>
+                <input type="text" name="skype" id="skype_name" class="form-control" value="<?php echo (isset($setting['skype']) && $setting['skype'] !="") ? $setting['skype']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
             </div>
         </div>
     </div>
@@ -186,12 +187,26 @@
         </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <label>Instagram </label>
-                <input type="text" name="instagram" class="form-control" value="<?php echo (isset($setting['instagram']) && $setting['instagram'] !="") ? $setting['instagram']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
+                <label>Google+ </label>
+                <input type="text" name="google_plus_link" class="form-control" value="<?php echo (isset($setting['google_plus_link']) && $setting['google_plus_link'] !="") ? $setting['google_plus_link']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
 
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Linked In </label>
+                <input type="text" name="linked_in" class="form-control" value="<?php echo (isset($setting['linked_in']) && $setting['linked_in'] !="") ? $setting['linked_in']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Instagram </label>
+                <input type="text" name="instagram" class="form-control" value="<?php echo (isset($setting['instagram']) && $setting['instagram'] !="") ? $setting['instagram']:""; ?>" autocomplete="off" kl_virtual_keyboard_secure_input="on">
+            </div>
+        </div>
+    </div> -->
     <div class="row">
         <div class="col-sm-6">
             <div class="form-group">
@@ -201,8 +216,8 @@
         </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <label>Slogan</label>
-                <textarea rows="5" cols="10" name="slogan" id="contact-detail"><?php echo (isset($setting['slogan']) && $setting['slogan'] !="") ? $setting['slogan']:""; ?></textarea>
+                <label>Contact Details</label>
+                <textarea rows="5" cols="10" name="contact_details" id="contact-detail"><?php echo (isset($setting['contact_details']) && $setting['contact_details'] !="") ? $setting['contact_details']:""; ?></textarea>
             </div>
         </div>
     </div>

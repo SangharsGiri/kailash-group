@@ -86,11 +86,6 @@
                                     </td>
                                 </tr>
 
-                                <tr valign="top">
-                                    <th style="background: transparent none repeat scroll 0% 0%;" scope="row"><label for="admin_name">Duration<span class="asterisk">*</span>
-                                        </label></th>
-                                    <td style="background: transparent none repeat scroll 0% 0%;"><input type="text" name="duration" id="duration" size="50" value="<?php echo (isset($content['duration']) && $content['duration'] !="") ? $content['duration']:""; ?>" data-validation="required" autocomplete="off" class="regular-text required valid" kl_virtual_keyboard_secure_input="on"></td>
-                                </tr>
 
                                 <tr valign="top" id="featured_img">
                                     <th style="background: transparent none repeat scroll 0% 0%;" scope="row"><label>Featured Image</label></th>

@@ -46,18 +46,24 @@
                                     <td style="background: transparent none repeat scroll 0% 0%;"><input type="text" name="category_name"  size="50" data-validation="required"  value="<?php echo (isset($setting['category_name']) && $setting['category_name'] !="") ? $setting['category_name']:""; ?>"  autocomplete="off" class="regular-text required valid" kl_virtual_keyboard_secure_input="on"></td>
                                 </tr>
 
-                               <!--  <tr valign="top">
+                                <tr valign="top">
                                     <th style="background: transparent none repeat scroll 0% 0%;" scope="row"><label for="slogan">Category Code<span class="asterisk">*</span> </label></th>
                                     <td style="background: transparent none repeat scroll 0% 0%;">
 
-                                      <select multiple="multiple" name="category_code" class="pcategory_code" data-validation="required">
+                                      <select name="category_code" multiple="multiple" class="pcategory_code" data-validation="required">
                                           <option <?php echo (isset($setting['category_code']) && $setting['category_code'] =="RP") ? "selected":"";?> value="RP">Kailas Group Pra.Li.</option>
                                           <option <?php echo (isset($setting['category_code']) && $setting['category_code'] =="OTH") ? "selected":"";?> value="OTH">Other</option>
                                           <option <?php echo (isset($setting['category_code']) && $setting['category_code'] =="OB") ? "selected":"";?> value="OB">Outbound</option>
                                       </select>
 
                                     </td>
-                                </tr> -->
+                                </tr>
+                                <script>
+   $(document).ready(function() {
+    $('.pcategory_code').select2();
+});
+</script>
+
                                 <tr valign="top" id="featured_img">
                                     <th style="background: transparent none repeat scroll 0% 0%;" scope="row"><label>Featured Image</label></th>
                                     <td style="background: transparent none repeat scroll 0% 0%;">

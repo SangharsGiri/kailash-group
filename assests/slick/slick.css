@@ -115,39 +115,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-/*.about-section .block-one ul .help {
-    background: #044e77;
-    padding: 10px 30px;
-    font-size: 26px;
-    color: #fff;
-    font-weight: bold;
-    margin-left: 274px !important;
-    display: inline-block;
-}*/
-/*#rating_modal .close{
-    font-size: 40px;
-    color: #fff;
-    opacity: 1;
-}
-
-#rating_modal .modal-header{
-    background: #d9534f;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}   
-
-.star-rating {
-    line-height:32px;
-    font-size:1.25em;       
-}
-
-.star {
-    line-height:32px;
-    font-size:1.25em;
-    cursor: pointer;
-}
-
-.star-rating .fa-star{color: #c20001;}
-.star .fa-star{color: #c20001;}
-*/
